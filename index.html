@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+  <title>LINUX BOT</title>
+  <style>
+    .chat-container{
+      width: 25rem;
+      height: 25rem;
+      margin-left: 50rem;
+    }
+    .chatroom{
+      background-color: whitesmoke;
+    }
+    .chatroom h3 {
+	 background-color: rgb(4,86,145);
+    }
+    .chatroom .input input[type="submit"] {
+	 
+	 background: rgb(4,86,145);
+    }
+    .chatroom #speech-input {
+	
+	 background:  rgb(4,86,145);
+    }
+    .chatroom .input {
+
+	 background-color:rgb(4,86,145);
+    }
+
+  </style>
+</head>
+<body>
+    <div class="chat-container"></div>
+  
+    <script src="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.js"/></script>
+    <script type="text/javascript">
+      var chatroom = new window.Chatroom({
+        host: "http://localhost:5005",
+        title: "Linux Help Bot",
+        container: document.querySelector(".chat-container"),
+        welcomeMessage: "Hi. Nice to meet you! what do you want to know ?",
+        speechRecognition: "en-US",
+        voiceLang: "en-US"
+      });
+      chatroom.openChat();
+    </script>
+
+  
+  
+</body>
+</html>

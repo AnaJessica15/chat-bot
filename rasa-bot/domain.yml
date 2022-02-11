@@ -1,0 +1,95 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - linux
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is a joke to cheer you up: What kind of doctor fixes broken websites? A URLologist !"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a Linux Rescue bot, powered by Rasa, at your service !"
+
+  utter_linux/1:
+  - text: "cat"
+
+  utter_linux/2:
+  - text: "head"
+
+  utter_linux/3:
+  - text: "tail"
+
+  utter_linux/4:
+  - text: pwd"
+
+  utter_linux/5:
+  - text: "ls"
+
+  utter_linux/6:
+  - text: "passwd"
+
+  utter_linux/7:
+  - text: "history"
+
+  utter_linux/8:
+  - text: "gzip"
+
+  utter_linux/9:
+  - text: "grep"
+
+  utter_linux/10:
+  - text: "diff"
+
+  utter_linux/11:
+  - text: "ps"
+
+  utter_linux/12:
+  - text: "kill"
+
+  utter_linux/13:
+  - text: "ssh"
+
+  utter_linux/14:
+  - text: "df"
+
+  utter_linux/15:
+  - text: "shutdowm"
+
+  utter_linux/16:
+  - text: "free"
+
+  utter_linux/17:
+  - text: "cp"
+
+  utter_linux/18:
+  - text: "mkdir"
+
+  utter_linux/19:
+  - text: "mkdir"
+
+  utter_linux/20:
+  - text: "touch"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

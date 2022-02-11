@@ -1,0 +1,174 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: linux/1
+  examples: |
+    - entire contents of the file
+
+- intent: linux/2
+  examples: |
+    - first 10 lines of the file
+
+- intent: linux/3
+  examples: |
+    -  last 10 lines of the file 
+
+- intent: linux/4
+  examples: |
+    - display the current working directory
+
+- intent: linux/5
+  examples: |
+    - list the files and directories in the specified path
+
+- intent: linux/6
+  examples: |
+    - change the password
+
+- intent: linux/7
+  examples: |
+    - list the previously executed commands
+
+- intent: linux/8
+  examples: |
+    - compresses the file 
+    - compresses the file and will have an extension of .gz 
+
+- intent: linux/9
+  examples: |
+    -  finds and displays a string or a regular expression in a file
+
+- intent: linux/10
+  examples: |
+    - find the difference between the 2 files
+
+- intent: linux/11
+  examples: |
+    - list the currently active processes along with their PID
+
+- intent: linux/12
+  examples: |
+    - terminate a process with the help of PID
+
+- intent: linux/13
+  examples: |
+    - a secure connection to a remote machine
+
+- intent: linux/14
+  examples: |
+    - hecking the space available across the different file systems
+
+- intent: linux/15
+  examples: |
+    - shutdown the system
+
+- intent: linux/16
+  examples: |
+    - how much of your computer memory is in use and how much is still available for programs
+
+- intent: linux/17
+  examples: |
+    - copy files from one place to another
+
+- intent: linux/18
+  examples: |
+    - create a new directory by specifying the path
+
+- intent: linux/19
+  examples: |
+    - remove a directory by specifying the path
+
+- intent: linux/20
+  examples: |
+    - create empty files
+
