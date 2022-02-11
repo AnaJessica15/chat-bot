@@ -1,11 +1,8 @@
 ## For Rasa
 
-Open two terminals and execute following cmds
+In the rasa-bot directory, run:
 
 ```
-rasa run -m models --enable-api --cors "*" --debug
+rasa run --credentials ./credentials.yml --enable-api --auth-token XYZ123 --model ./models --endpoints ./endpoints.yml --cors "*"
 ```
-
-```
-rasa run actions
-```
+View in localhost
