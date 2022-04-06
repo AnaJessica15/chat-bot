@@ -5,12 +5,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://npm-scalableminds.s3.eu-central-1.amazonaws.com/@scalableminds/chatroom@master/dist/Chatroom.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
   <title>LINUX BOT</title>
   <style>
+    body {
+  background-image: url("backgroundimg2.jpg");
+  background-repeat: no-repeat;
+ 
+
+  
+}
     .chat-container{
+      margin-top: 14rem;
       width: 25rem;
       height: 25rem;
-      margin-left: 50rem;
+      /* margin-left: 42.5rem; */
+      margin-left: 26.2rem;
     }
     .chatroom{
       background-color: whitesmoke;
@@ -31,6 +42,48 @@
 	 background-color:rgb(4,86,145);
     }
 
+    .vertical {
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -ms-transform-origin: right top 0;
+  -moz-transform-origin: right top 0;
+  -webkit-transform-origin: right top 0;
+  transform-origin: right top 0;
+  font-family: "Megrim", cursive;
+  right: 99%;
+  color: coral;
+  padding-top: 2vw;
+  padding-right: 2vw;
+  font-size: 5vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: vertical-text;
+  position: absolute;
+  display: block;
+  height: auto;
+  direction: rtl;
+  z-index: 11;
+
+}
+
+.wrap {
+  width: 50vw;
+}
+.wrapv {
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 5;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 80rem;
+  height: 100%;
+  width: 10vw;
+  overflow-y:hidden ;
+}
+
+
   </style>
 </head>
 <body>
@@ -40,7 +93,7 @@
     <script type="text/javascript">
       var chatroom = new window.Chatroom({
         host: "http://localhost:5005",
-        title: "Linux Help Bot",
+        title: "Linux Bot",
         container: document.querySelector(".chat-container"),
         welcomeMessage: "Hi. Nice to meet you! what do you want to know ?",
         speechRecognition: "en-US",
@@ -49,7 +102,14 @@
       chatroom.openChat();
     </script>
 
-  
+
+<div class="wrap">
+  <div class="wrapv">
+    <div class="vertical">
+    LINUX CHAT BOT
+    </div>
+  </div>
+</div>
   
 </body>
 </html>
